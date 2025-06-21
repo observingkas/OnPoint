@@ -3,173 +3,342 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Professional Mold Removal Services</title>
-    <link rel="stylesheet" href="css/normalize.css" />
+    <title>On Point Remediation - Professional Mold Remediation Services</title>
     <link rel="stylesheet" href="css/style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
+
+    <!-- Header -->
+
     <header>
-      <div class="container">
-        <div class="logo">
-          <h1>On Point Remediation</h1>
+      <div class="top-bar">
+        <div class="container">
+          <div class="contact-info">
+            <a href="tel:5551234567"
+              ><i class="fas fa-phone"></i> (555) 123-4567</a>
+            <a href="mailto:info@onpointremediation.com"
+              ><i class="fas fa-envelope"></i> info@onpointremediation.com</a
+            >
+          </div>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-google"></i></a>
+          </div>
         </div>
-        <nav>
-          <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="pages/about.html">About Us</a></li>
-            <li><a href="pages/services.html">Services</a></li>
-            <li><a href="pages/reviews.html">Reviews</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="pages/login.html" class="login-btn">Login</a></li>
-          </ul>
-        </nav>
+      </div>
+      <div class="main-header">
+        <div class="container">
+          <div class="logo">
+            <img src="assets\LOGO12.png" alt="" />
+            <h1>On Point Remediation</h1>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="pages/about.html">About Us</a></li>
+              <li><a href="pages/services.html">Services</a></li>
+              <li><a href="pages/reviews.html">Reviews</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="pages/login.html" class="login-link">Login</a></li>
+            </ul>
+          </nav>
+          <div class="mobile-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
       </div>
     </header>
 
+    <!-- Hero Section -->
     <section class="hero">
-      <div class="container">
-        <h2>Professional Mold Removal Services</h2>
-        <p>
-          Safe, effective and thorough mold remediation for your home or
-          business.
-        </p>
-        <a href="#quote" class="btn primary-btn">Our Services</a>
+      <div class="hero-slider">
+        <div class="slide active">
+          <div class="hero-overlay"></div>
+          <div class="container">
+            <div class="hero-content">
+              <h1 class="hero-title">Professional Mold Remediation</h1>
+              <p class="hero-subtitle">
+                Certified experts providing safe and effective mold removal
+                services
+              </p>
+              <div class="hero-cta">
+                <a href="#quote" class="btn primary-btn">Get a Free Quote</a>
+                <a href="tel:5551234567" class="btn call-btn"
+                  ><i class="fas fa-phone"></i> Call Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-badges">
+        <div class="container">
+          <div class="badge-container">
+            <div class="badge">
+              <img src="assets\certified.png" alt="Certified" />
+              <span>Certified Technicians</span>
+            </div>
+            <div class="badge">
+              <img src="images/badges/24-7.png" alt="24/7 Service" />
+              <span>24/7 Emergency Service</span>
+            </div>
+            <div class="badge">
+              <img
+                src="images/badges/satisfaction.png"
+                alt="Satisfaction Guaranteed"
+              />
+              <span>Satisfaction Guaranteed</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="features">
+    <!-- Services Section -->
+    <section class="services">
       <div class="container">
-        <div class="feature-box">
-          <img src="images/icons/certified.svg" alt="Certified" />
-          <h3>Certified Experts</h3>
+        <div class="section-header">
+          <h2>Our Services</h2>
           <p>
-            Our team is fully certified and trained in the latest mold
-            remediation techniques.
+            Comprehensive mold remediation solutions for residential and
+            commercial properties
           </p>
         </div>
-        <div class="feature-box">
-          <img src="images/icons/fast.svg" alt="Fast Response" />
-          <h3>Fast Response</h3>
-          <p>We respond quickly to prevent further damage to your property.</p>
-        </div>
-        <div class="feature-box">
-          <img src="images/icons/guarantee.svg" alt="Guaranteed" />
-          <h3>Satisfaction Guaranteed</h3>
-          <p>We stand behind our work with a 100% satisfaction guarantee.</p>
+
+        <div class="services-grid">
+          <div class="service-item">
+            <div class="service-icon">
+              <img src="images/icons/residential.svg" alt="Residential" />
+            </div>
+            <h3>Residential Mold Removal</h3>
+            <p>
+              Complete mold remediation services for homes of all sizes,
+              ensuring your family's safety and health.
+            </p>
+            <a href="pages/services.html#residential" class="service-link"
+              >Learn More <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+
+          <div class="service-item">
+            <div class="service-icon">
+              <img src="images/icons/commercial.svg" alt="Commercial" />
+            </div>
+            <h3>Commercial Remediation</h3>
+            <p>
+              Specialized mold removal for businesses, offices, and commercial
+              properties with minimal disruption.
+            </p>
+            <a href="pages/services.html#commercial" class="service-link"
+              >Learn More <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+
+          <div class="service-item">
+            <div class="service-icon">
+              <img src="images/icons/inspection.svg" alt="Inspection" />
+            </div>
+            <h3>Mold Inspection & Testing</h3>
+            <p>
+              Thorough inspections to identify all mold sources and
+              comprehensive testing to detect presence of mold.
+            </p>
+            <a href="pages/services.html#inspection" class="service-link"
+              >Learn More <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+
+          <div class="service-item">
+            <div class="service-icon">
+              <img src="images/icons/prevention.svg" alt="Prevention" />
+            </div>
+            <h3>Mold Prevention</h3>
+            <p>
+              Proactive solutions to prevent future mold growth and protect your
+              property long-term.
+            </p>
+            <a href="pages/services.html#prevention" class="service-link"
+              >Learn More <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="services-preview">
+    <!-- Process Section -->
+    <section class="process">
       <div class="container">
-        <h2>Our Complete Services</h2>
-        <div class="service-grid">
-          <div class="service-card">
-            <img
-              src="images/services/residential.jpg"
-              alt="Residential Services"
-            />
-            <h3>Residential</h3>
-            <p>Complete mold removal services for homes of all sizes.</p>
+        <div class="section-header">
+          <h2>Our Process</h2>
+          <p>A systematic approach to effective mold remediation</p>
+        </div>
+
+        <div class="process-steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h3>Inspection & Assessment</h3>
+              <p>
+                We thoroughly inspect your property to identify all mold sources
+                and assess the extent of the damage.
+              </p>
+            </div>
           </div>
-          <div class="services-card">
-            <img
-              src="images/services/commercial.jpg"
-              alt="Commercial Services"
-            />
-            <h3>Commercial</h3>
+
+          <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3>Containment</h3>
+              <p>
+                We isolate the affected areas to prevent mold spores from
+                spreading to clean areas of your property.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3>Air Filtration</h3>
+              <p>
+                Specialized equipment is used to capture airborne mold spores
+                and clean the air in the affected area.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h3>Removal & Cleaning</h3>
+              <p>
+                We remove mold-infested materials and clean salvageable items
+                using specialized techniques.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">5</div>
+            <div class="step-content">
+              <h3>Restoration</h3>
+              <p>
+                We restore your property to its pre-mold condition, replacing
+                materials and repairing damage as needed.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section id="quote" class="quote-section">
+      <div class="container">
+        <div class="quote-content">
+          <div class="quote-text">
+            <h2>Request a Free Quote</h2>
             <p>
-              Specialized mold remediation for business and commercial
-              properties.
+              Our team will provide a detailed assessment and competitive
+              pricing for your mold remediation needs.
+            </p>
+            <ul class="quote-benefits">
+              <li><i class="fas fa-check"></i> No obligation consultation</li>
+              <li><i class="fas fa-check"></i> Fast response times</li>
+              <li><i class="fas fa-check"></i> Detailed written estimate</li>
+            </ul>
+          </div>
+          <div class="quote-form-container">
+            <form id="quote-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Tell us about your mold issue</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn primary-btn">
+                Submit Request
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>On Point Remediation</h3>
+            <p>
+              Professional mold remediation services for residential and
+              commercial properties. We're dedicated to providing safe,
+              effective solutions for all your mold problems.
             </p>
           </div>
-          <div class="services-card">
-            <img src="images/services/inspection.jpg" alt="Mold Inspection" />
-            <h3>Mold Inspection</h3>
-            <p>Thorough inspections to identify all mold sources.</p>
+          <div class="footer-column">
+            <h3>Contact Us</h3>
+            <ul class="footer-contact">
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>123 Main Street<br />Anytown, ST 12345</span>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <span>(555) 123-4567</span>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <span>info@onpointremediation.com</span>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="pages/about.html">About Us</a></li>
+              <li><a href="pages/services.html">Services</a></li>
+              <li><a href="pages/reviews.html">Reviews</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
           </div>
         </div>
-        <a href="pages/services.html" class="btn primarty-btn">View All Services</a>
-      </div>
-    </section>
-
-    <section id="quote" class="quote-section">
-        <div class="container">
-        <h2>Get a Free Quote</h2>
-        <form id="quote-form">
-            <div class="form-group">
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
-            </div>
-            <div class="formg-group">
-                <input type="tel" id="phone" name="phone" placeholder="Phone Number">
-            </div>
-            <div class="form-group">
-                <textarea id="message" name="message" placeholder="Describe your mold issue" required></textarea>
-            </div>
-            <button type="submit" class="btn primary-btn">Submit Request</button>
-        </form>
-    </div>
-    </section>
-
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <div class="contact-info">
-                <div class="contact-details">
-                    <h3>Get in Touch</h3>
-                    <p><strong>Phone:</strong> (555) 123-4567</p>
-                    <p><strong>Email:</strong> info@onpointremediation.com</p>
-                    <div class="hours">
-                        <h4>Business Hours</h4>
-                        <p>Monday-Saturday: 8am-6pm</p>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form id="contact-form"></form>
-                    <form id="contact-form"></form>
-                    <div class="form-group">
-                        <input type="text" id="contact-name" name="contact-name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="contact-email" name="contact-email" placeholder="Email Address" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="contact-message" name="contact-message" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn primary-btn">Send Message</button>
-                </form>
-                </div>
-            </div>
+        <div class="copyright">
+          <p>&copy; 2023 On Point Remediation. All Rights Reserved.</p>
         </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h3>On Point Remediation</h3>
-                    <p>Professional Mold Removal Services</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="pages/about.html">About Us</a></li>
-                        <li><a href="pages/services.html">Services</a></li>
-                        <li><a href="pages/reviews.html">Reviews</a></li>
-                        <li><a href="#contact">Contact"</a></li>
-                    </ul>
-                </div>
-                <div class="copyright">
-                    <p>&copy; 2025 On Point Remediation. All Rights Reserved.</p>
-                </div>
-            </div>
+      </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
