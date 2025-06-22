@@ -3,15 +3,214 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reviews - On Point Remediation</title>
+    <meta
+      name="description"
+      content="Read reviews and testimonials from satisfied clients of On Point Remediation's professional mold remediation and restoration services."
+    />
+    <title>Client Reviews - On Point Remediation</title>
+    <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Skip link styles */
+      .skip-link {
+        position: absolute;
+        top: -40px;
+        left: 6px;
+        background: #000;
+        color: #fff;
+        padding: 8px;
+        text-decoration: none;
+        z-index: 1000;
+        border-radius: 4px;
+      }
+      .skip-link:focus {
+        top: 6px;
+      }
+
+      /* Reviews page specific styles */
+      .reviews-hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+          url("../images/backgrounds/reviews-bg.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-top: -80px;
+        padding-top: 80px;
+      }
+
+      .reviews-content {
+        padding: 80px 0;
+        text-align: center;
+        background-color: var(--darker-bg);
+      }
+
+      .coming-soon {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 40px;
+        background-color: var(--border-bg);
+        border-radius: var(--border-radius);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      .coming-soon h2 {
+        color: var(--cobalt-blue);
+        margin-bottom: 20px;
+      }
+
+      .coming-soon p {
+        font-size: 1.1em;
+        line-height: 1.6;
+        margin-bottom: 30px;
+      }
+
+      .contact-cta {
+        margin-top: 40px;
+      }
+
+      .contact-cta p {
+        margin-bottom: 20px;
+        font-weight: 500;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <h1>Client Reviews</h1>
+    <!-- Skip link for keyboard navigation -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header role="banner">
+      <div class="container">
+        <div class="logo">
+          <img
+            src="../assets/LOGO12.png"
+            alt="On Point Remediation company logo"
+          />
+          <h1>On Point Remediation</h1>
+        </div>
+        <nav role="navigation" aria-label="Main navigation">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li>
+              <a href="reviews.html" class="active" aria-current="page"
+                >Reviews</a
+              >
+            </li>
+            <li><a href="../index.html#contact">Contact</a></li>
+            <li><a href="login.html" class="login-btn">Login</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main>
-      <p>Check back soon to see what our satisfied clients are saying!</p>
+
+    <main id="main-content" role="main">
+      <section class="reviews-hero" aria-labelledby="reviews-hero-heading">
+        <div class="container">
+          <h1 id="reviews-hero-heading">Client Reviews</h1>
+          <p>
+            See what our satisfied customers have to say about our professional
+            mold remediation services.
+          </p>
+        </div>
+      </section>
+
+      <section class="reviews-content" aria-labelledby="reviews-status-heading">
+        <div class="container">
+          <div class="coming-soon">
+            <h2 id="reviews-status-heading">Reviews Coming Soon</h2>
+            <p>
+              We're currently setting up our review system to showcase
+              testimonials from our valued clients. Check back soon to read
+              about the experiences of homeowners and businesses who have
+              trusted us with their mold remediation needs.
+            </p>
+            <p>
+              In the meantime, we'd love to hear about your experience with our
+              services. Your feedback helps us continue to provide the highest
+              quality mold remediation and restoration services.
+            </p>
+
+            <div class="contact-cta">
+              <p>Have a question or ready to get started?</p>
+              <a href="../index.html#quote" class="btn primary-btn"
+                >Get a Free Quote</a
+              >
+              <a href="../index.html#contact" class="btn secondary-btn"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>On Point Remediation</h3>
+            <p>
+              Professional mold remediation services for residential and
+              commercial properties. We're dedicated to providing safe,
+              effective solutions for all your mold problems.
+            </p>
+          </div>
+          <div class="footer-column">
+            <h3>Contact Us</h3>
+            <ul class="footer-contact">
+              <li>
+                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                <span>
+                  <address>
+                    123 Main Street<br />
+                    Anytown, ST 12345
+                  </address>
+                </span>
+              </li>
+              <li>
+                <i class="fas fa-phone" aria-hidden="true"></i>
+                <a
+                  href="tel:5551234567"
+                  aria-label="Call us at 5 5 5 1 2 3 4 5 6 7"
+                  >(555) 123-4567</a
+                >
+              </li>
+              <li>
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+                <a href="mailto:info@onpointremediation.com"
+                  >info@onpointremediation.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <nav aria-label="Footer navigation">
+              <ul class="footer-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="reviews.html" aria-current="page">Reviews</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2025 On Point Remediation. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
   </body>
 </html>

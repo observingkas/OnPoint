@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Our Services - Professional Mold Removal Services</title>
+    <meta
+      name="description"
+      content="Professional mold remediation services including mold removal, inspection, water damage restoration, air quality improvement, and preventative maintenance for residential and commercial properties."
+    />
+    <title>
+      Our Services - Professional Mold Removal Services | On Point Remediation
+    </title>
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <link
@@ -24,91 +30,89 @@
         margin-top: -80px;
         padding-top: 80px;
       }
-
       .service-item {
         padding: 60px 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
       }
-
       .service-item:last-child {
         border-bottom: none;
       }
-
       .service-item:nth-child(even) {
         background-color: var(--border-bg);
       }
-
       .service-content {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
       }
-
       .service-text {
         flex: 1;
         min-width: 300px;
         padding: 20px;
       }
-
       .service-image {
         flex: 1;
         min-width: 300px;
         padding: 20px;
       }
-
       .service-image img {
         width: 100%;
         border-radius: var(--border-radius);
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
       }
-
       .service-item:nth-child(odd) .service-content {
         flex-direction: row-reverse;
       }
-
       .service-text h2 {
         color: var(--cobalt-blue);
         margin-bottom: 20px;
       }
-
       .service-features {
         margin-top: 30px;
       }
-
       .service-features ul {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 30px;
-  text-align: center; /* center all text inside ul */
-}
-
-.service-features ul li {
-  display: inline-flex;     /* inline flex so li wraps content, not full width */
-  align-items: center;      /* vertical center checkmark and text */
-  margin-bottom: 15px;
-  justify-content: center;  /* center horizontally inside li */
-}
-
-.service-features ul li::before {
-  content: "✓";
-  color: green;
-  font-weight: bold;
-  margin-right: 8px;
-  flex-shrink: 0;
-}
-
-
+        list-style: none;
+        padding-left: 0;
+        margin-top: 30px;
+        text-align: center;
+      }
+      .service-features ul li {
+        display: inline-flex;
+        align-items: center;
+        margin-bottom: 15px;
+        justify-content: center;
+      }
+      .service-features ul li::before {
+        content: "✓";
+        color: green;
+        font-weight: bold;
+        margin-right: 8px;
+        flex-shrink: 0;
+      }
       .cta-section {
         background-color: var(--darker-bg);
         padding: 60px 0;
         text-align: center;
       }
-
+      /* Skip link styles */
+      .skip-link {
+        position: absolute;
+        top: -40px;
+        left: 6px;
+        background: #000;
+        color: #fff;
+        padding: 8px;
+        text-decoration: none;
+        z-index: 1000;
+        border-radius: 4px;
+      }
+      .skip-link:focus {
+        top: 6px;
+      }
       @media (max-width: 768px) {
         .service-content {
           flex-direction: column-reverse !important;
         }
-
         .service-image {
           margin-bottom: 30px;
         }
@@ -116,16 +120,27 @@
     </style>
   </head>
   <body>
-    <header>
+    <!-- Skip link for keyboard navigation -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header role="banner">
       <div class="container">
         <div class="logo">
+          <img
+            src="../assets/LOGO12.png"
+            alt="On Point Remediation company logo"
+          />
           <h1>On Point Remediation</h1>
         </div>
-        <nav>
+        <nav role="navigation" aria-label="Main navigation">
           <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html" class="active">Services</a></li>
+            <li>
+              <a href="services.html" class="active" aria-current="page"
+                >Services</a
+              >
+            </li>
             <li><a href="reviews.html">Reviews</a></li>
             <li><a href="../index.html#contact">Contact</a></li>
             <li><a href="login.html" class="login-btn">Login</a></li>
@@ -134,278 +149,420 @@
       </div>
     </header>
 
-    <section class="services-hero">
-      <div class="container">
-        <h2>Our Services</h2>
-        <p>
-          Comprehensive mold remediation and related services for your home or
-          business.
-        </p>
-      </div>
-    </section>
-
-    <div class="service-list">
-      <!-- Service 1: Mold Remediation -->
-      <section class="service-item">
+    <main id="main-content" role="main">
+      <section class="services-hero" aria-labelledby="services-hero-heading">
         <div class="container">
-          <div class="service-content">
-            <div class="service-text">
-              <h2>Mold Remediation</h2>
-              <p>
-                Our comprehensive mold remediation service addresses the root
-                cause of mold growth and safely removes all traces of mold from
-                your property. We follow industry-standard protocols to ensure
-                thorough remediation.
-              </p>
-              <p>
-                Our certified technicians use advanced equipment and
-                environmentally friendly products to eliminate mold while
-                minimizing disruption to your home or business.
-              </p>
-
-              <div class="service-features">
-                <h3>Our Process Includes:</h3>
-                <ul>
-                  <li>Thorough inspection and assessment</li>
-                  <li>Containment to prevent cross-contamination</li>
-                  <li>HEPA air filtration</li>
-                  <li>Safe removal of mold-infested materials</li>
-                  <li>Cleaning and sanitizing affected areas</li>
-                  <li>Post-remediation verification</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="service-image">
-              <img
-                src="../images/services/mold-remediation.jpg"
-                alt="Mold Remediation"
-              />
-            </div>
-          </div>
+          <h1 id="services-hero-heading">Our Services</h1>
+          <p>
+            Comprehensive mold remediation and related services for your home or
+            business.
+          </p>
         </div>
       </section>
 
-      <!-- Service 2: Mold Inspection & Testing -->
-      <section class="service-item">
-        <div class="container">
-          <div class="service-content">
-            <div class="service-text">
-              <h2>Mold Inspection & Testing</h2>
-              <p>
-                Our professional mold inspection services help identify hidden
-                mold problems before they become serious health hazards or cause
-                structural damage to your property.
-              </p>
-              <p>
-                We use advanced detection methods and laboratory testing to
-                accurately identify mold species and concentration levels,
-                allowing us to develop an effective remediation plan.
-              </p>
-
-              <div class="service-features">
-                <h3>Our Inspection Services Include:</h3>
-                <ul>
-                  <li>Visual inspection of all areas</li>
-                  <li>Moisture mapping and detection</li>
-                  <li>Air quality sampling</li>
-                  <li>Surface sampling</li>
-                  <li>Thermal imaging to detect hidden moisture</li>
-                  <li>Detailed report with findings and recommendations</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="service-image">
-              <img
-                src="../images/services/mold-inspection.jpg"
-                alt="Mold Inspection"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Service 3: Water Damage Restoration -->
-       <section class="service-item">
-        <div class="container">
+      <div
+        class="service-list"
+        role="list"
+        aria-label="Our professional services"
+      >
+        <!-- Service 1: Mold Remediation -->
+        <section
+          class="service-item"
+          role="listitem"
+          aria-labelledby="mold-remediation-heading"
+        >
+          <div class="container">
             <div class="service-content">
-                <div class="service-text">
-                    <h2>Water Damage Restoration</h2>
-                    <p>Water damage is often the primary cause of mold growth. Our water damage restoration services address both the immediate damage and help prevent future mold problems</p>
-                    <p>We respond quickly to water emergencies to minimize damage and begin the drying process as soon as possible, using industrial-grade equipment and proven techniques.</p>
-
-                    <div class="service-features">
-                        <h3>Our Water Damage Services Include:</h3>
-                        <ul>
-                            <li>Emergency water extraction</li>
-                            <li>Structural drying</li>
-                            <li>Dehumidification</li>
-                            <li>Sanitizing and deodorizing</li>
-                            <li>Structural repairs</li>
-                            <li>Preventative treatments to inhibit mold growth</li>
-                        </ul>
-                    </div>
+              <div class="service-text">
+                <h2 id="mold-remediation-heading">Mold Remediation</h2>
+                <p>
+                  Our comprehensive mold remediation service addresses the root
+                  cause of mold growth and safely removes all traces of mold
+                  from your property. We follow industry-standard protocols to
+                  ensure thorough remediation.
+                </p>
+                <p>
+                  Our certified technicians use advanced equipment and
+                  environmentally friendly products to eliminate mold while
+                  minimizing disruption to your home or business.
+                </p>
+                <div class="service-features">
+                  <h3>Our Process Includes:</h3>
+                  <ul role="list" aria-label="Mold remediation process steps">
+                    <li role="listitem">Thorough inspection and assessment</li>
+                    <li role="listitem">
+                      Containment to prevent cross-contamination
+                    </li>
+                    <li role="listitem">HEPA air filtration</li>
+                    <li role="listitem">
+                      Safe removal of mold-infested materials
+                    </li>
+                    <li role="listitem">
+                      Cleaning and sanitizing affected areas
+                    </li>
+                    <li role="listitem">Post-remediation verification</li>
+                  </ul>
                 </div>
-
-                <div class="service-image">
-                    <img src="../images/services/water-damage.jpg" alt="Water Damage Restoration">
-                </div>
+              </div>
+              <div class="service-image">
+                <img
+                  src="../images/services/mold-remediation.jpg"
+                  alt="Professional technician in protective gear performing mold remediation work"
+                />
+              </div>
             </div>
-        </div>
-       </section>
+          </div>
+        </section>
 
-       <!-- Service 4: Indoor Air Quality Improvement -->
-        <section class="service-item">
-            <div class="container">
-                <div class="service-content">
-                    <div class="service-text">
-                        <h2>Indoor Air Quality Improvement</h2>
-                        <p>Poor indoor air quality can lead to health issues and discomfort. Our air quality improvement services help create a healthier indoor environment by removing contaminants and improving ventilation.</p>
-                        <p>We offer comprehensive solutions to address various air quality concerns, from mold spores and allergens to VOCs and other pollutants.</p>
-
-                        <div class="service-features">
-                            <h3>Our Air Quality Services Include:</h3>
-                            <ul>
-                                <li>Air quality testing and assessment</li>
-                                <li>HVAC system cleaning and sanitizing</li>
-                                <li>Air duct cleaning</li>
-                                <li>Air purification systems installation</li>
-                                <li>Ventilation improvment</li>
-                                <li>Odor removal and deodorization</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="service-image">
-                        <img src="../images/services/air-quality.jpg" alt="Indoor Air Quality">
-                    </div>
+        <!-- Service 2: Mold Inspection & Testing -->
+        <section
+          class="service-item"
+          role="listitem"
+          aria-labelledby="mold-inspection-heading"
+        >
+          <div class="container">
+            <div class="service-content">
+              <div class="service-text">
+                <h2 id="mold-inspection-heading">Mold Inspection & Testing</h2>
+                <p>
+                  Our professional mold inspection services help identify hidden
+                  mold problems before they become serious health hazards or
+                  cause structural damage to your property.
+                </p>
+                <p>
+                  We use advanced detection methods and laboratory testing to
+                  accurately identify mold species and concentration levels,
+                  allowing us to develop an effective remediation plan.
+                </p>
+                <div class="service-features">
+                  <h3>Our Inspection Services Include:</h3>
+                  <ul role="list" aria-label="Mold inspection services">
+                    <li role="listitem">Visual inspection of all areas</li>
+                    <li role="listitem">Moisture mapping and detection</li>
+                    <li role="listitem">Air quality sampling</li>
+                    <li role="listitem">Surface sampling</li>
+                    <li role="listitem">
+                      Thermal imaging to detect hidden moisture
+                    </li>
+                    <li role="listitem">
+                      Detailed report with findings and recommendations
+                    </li>
+                  </ul>
                 </div>
+              </div>
+              <div class="service-image">
+                <img
+                  src="../images/services/mold-inspection.jpg"
+                  alt="Technician using thermal imaging equipment to inspect for mold and moisture"
+                />
+              </div>
             </div>
+          </div>
+        </section>
+
+        <!-- Service 3: Water Damage Restoration -->
+        <section
+          class="service-item"
+          role="listitem"
+          aria-labelledby="water-damage-heading"
+        >
+          <div class="container">
+            <div class="service-content">
+              <div class="service-text">
+                <h2 id="water-damage-heading">Water Damage Restoration</h2>
+                <p>
+                  Water damage is often the primary cause of mold growth. Our
+                  water damage restoration services address both the immediate
+                  damage and help prevent future mold problems.
+                </p>
+                <p>
+                  We respond quickly to water emergencies to minimize damage and
+                  begin the drying process as soon as possible, using
+                  industrial-grade equipment and proven techniques.
+                </p>
+                <div class="service-features">
+                  <h3>Our Water Damage Services Include:</h3>
+                  <ul
+                    role="list"
+                    aria-label="Water damage restoration services"
+                  >
+                    <li role="listitem">Emergency water extraction</li>
+                    <li role="listitem">Structural drying</li>
+                    <li role="listitem">Dehumidification</li>
+                    <li role="listitem">Sanitizing and deodorizing</li>
+                    <li role="listitem">Structural repairs</li>
+                    <li role="listitem">
+                      Preventative treatments to inhibit mold growth
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="service-image">
+                <img
+                  src="../images/services/water-damage.jpg"
+                  alt="Industrial water extraction equipment being used for water damage restoration"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Service 4: Indoor Air Quality Improvement -->
+        <section
+          class="service-item"
+          role="listitem"
+          aria-labelledby="air-quality-heading"
+        >
+          <div class="container">
+            <div class="service-content">
+              <div class="service-text">
+                <h2 id="air-quality-heading">Indoor Air Quality Improvement</h2>
+                <p>
+                  Poor indoor air quality can lead to health issues and
+                  discomfort. Our air quality improvement services help create a
+                  healthier indoor environment by removing contaminants and
+                  improving ventilation.
+                </p>
+                <p>
+                  We offer comprehensive solutions to address various air
+                  quality concerns, from mold spores and allergens to VOCs and
+                  other pollutants.
+                </p>
+                <div class="service-features">
+                  <h3>Our Air Quality Services Include:</h3>
+                  <ul role="list" aria-label="Air quality improvement services">
+                    <li role="listitem">Air quality testing and assessment</li>
+                    <li role="listitem">HVAC system cleaning and sanitizing</li>
+                    <li role="listitem">Air duct cleaning</li>
+                    <li role="listitem">
+                      Air purification systems installation
+                    </li>
+                    <li role="listitem">Ventilation improvement</li>
+                    <li role="listitem">Odor removal and deodorization</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="service-image">
+                <img
+                  src="../images/services/air-quality.jpg"
+                  alt="Air quality testing equipment and HVAC system cleaning"
+                />
+              </div>
+            </div>
+          </div>
         </section>
 
         <!-- Service 5: Preventative Maintenance -->
-         <section class="service-item">
-            <div class="container">
-                <div class="service-content">
-                    <div class="service-text">
-                        <h2>Preventative Maintenance</h2>
-                        <p>The best way to deal with mold is to prevent it from growing in the first place. Our preventative maintenance programs help protect your property from mold and moisture problems.</p>
-                        <p>We offer regular inspections, moisture control solutions, and preventative treatments to keep your home or business mold-free.</p>
-                        
-                        <div class="service-features">
-                            <h3>Our Preventative Services Include:</h3>
-                            <ul>
-                                <li>Regular moisture inspections</li>
-                                <li>Humidity control solutions</li>
-                                <li>Waterproofing services</li>
-                                <li>Crawl space encapsulation</li>
-                                <li>Antimicrobial treatments</li>
-                                <li>Customized maintenance plans</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="service-image">
-                        <img src="../images/services/preventative.jpg" alt="Preventative Maintenance">
-                    </div>
+        <section
+          class="service-item"
+          role="listitem"
+          aria-labelledby="preventative-heading"
+        >
+          <div class="container">
+            <div class="service-content">
+              <div class="service-text">
+                <h2 id="preventative-heading">Preventative Maintenance</h2>
+                <p>
+                  The best way to deal with mold is to prevent it from growing
+                  in the first place. Our preventative maintenance programs help
+                  protect your property from mold and moisture problems.
+                </p>
+                <p>
+                  We offer regular inspections, moisture control solutions, and
+                  preventative treatments to keep your home or business
+                  mold-free.
+                </p>
+                <div class="service-features">
+                  <h3>Our Preventative Services Include:</h3>
+                  <ul
+                    role="list"
+                    aria-label="Preventative maintenance services"
+                  >
+                    <li role="listitem">Regular moisture inspections</li>
+                    <li role="listitem">Humidity control solutions</li>
+                    <li role="listitem">Waterproofing services</li>
+                    <li role="listitem">Crawl space encapsulation</li>
+                    <li role="listitem">Antimicrobial treatments</li>
+                    <li role="listitem">Customized maintenance plans</li>
+                  </ul>
                 </div>
+              </div>
+              <div class="service-image">
+                <img
+                  src="../images/services/preventative.jpg"
+                  alt="Preventative maintenance inspection of crawl space and moisture control systems"
+                />
+              </div>
             </div>
-         </section>
+          </div>
+        </section>
 
-         <!-- Service 6: Wood Repair -->
-<section class="service-item">
-  <div class="container">
-    <div class="service-content">
-      <div class="service-text">
-        <h2>Wood Repair</h2>
-        <p>Wood damage from moisture or age can compromise the integrity and aesthetics of your home. Our wood repair services restore damaged structures while preserving their original look and strength.</p>
-        <p>We work with a variety of wood types and finishes to deliver seamless repairs that blend beautifully with your space.</p>
+        <!-- Service 6: Wood Repair -->
+        <section
+          class="service-item"
+          role="listitem"
+          aria-labelledby="wood-repair-heading"
+        >
+          <div class="container">
+            <div class="service-content">
+              <div class="service-text">
+                <h2 id="wood-repair-heading">Wood Repair</h2>
+                <p>
+                  Wood damage from moisture or age can compromise the integrity
+                  and aesthetics of your home. Our wood repair services restore
+                  damaged structures while preserving their original look and
+                  strength.
+                </p>
+                <p>
+                  We work with a variety of wood types and finishes to deliver
+                  seamless repairs that blend beautifully with your space.
+                </p>
+                <div class="service-features">
+                  <h3>Our Wood Repair Services Include:</h3>
+                  <ul role="list" aria-label="Wood repair services">
+                    <li role="listitem">Dry rot repair and treatment</li>
+                    <li role="listitem">
+                      Exterior siding and trim restoration
+                    </li>
+                    <li role="listitem">Deck and porch structural repairs</li>
+                    <li role="listitem">Interior framing and support fixes</li>
+                    <li role="listitem">Custom carpentry for restoration</li>
+                    <li role="listitem">Protective sealing and finishing</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="service-image">
+                <img
+                  src="../images/services/wood-repair.jpg"
+                  alt="Professional wood repair and restoration work on exterior siding"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
 
-        <div class="service-features">
-          <h3>Our Wood Repair Services Include:</h3>
-          <ul>
-            <li>Dry rot repair and treatment</li>
-            <li>Exterior siding and trim restoration</li>
-            <li>Deck and porch structural repairs</li>
-            <li>Interior framing and support fixes</li>
-            <li>Custom carpentry for restoration</li>
-            <li>Protective sealing and finishing</li>
-          </ul>
+        <!-- Service 7: Home Remodeling (Interior & Exterior) -->
+        <section
+          class="service-item"
+          role="listitem"
+          aria-labelledby="remodeling-heading"
+        >
+          <div class="container">
+            <div class="service-content">
+              <div class="service-text">
+                <h2 id="remodeling-heading">
+                  Home Remodeling (Interior & Exterior)
+                </h2>
+                <p>
+                  From refreshing interiors to upgrading your home's exterior,
+                  our remodeling services are tailored to bring your vision to
+                  life. We combine skilled craftsmanship with functional design
+                  to enhance comfort, style, and property value.
+                </p>
+                <p>
+                  Whether you're dreaming of a new kitchen, a bathroom overhaul,
+                  or exterior curb appeal, we're here to help.
+                </p>
+                <div class="service-features">
+                  <h3>Our Remodeling Services Include:</h3>
+                  <ul role="list" aria-label="Home remodeling services">
+                    <li role="listitem">Kitchen and bathroom renovations</li>
+                    <li role="listitem">Flooring and drywall installation</li>
+                    <li role="listitem">Painting and lighting upgrades</li>
+                    <li role="listitem">Exterior siding and paint</li>
+                    <li role="listitem">Window and door replacements</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="service-image">
+                <img
+                  src="../images/services/home-remodeling.jpg"
+                  alt="Beautiful home remodeling project showing kitchen renovation and exterior improvements"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="cta-section" aria-labelledby="cta-heading">
+        <div class="container">
+          <h2 id="cta-heading">Ready to Get Started?</h2>
+          <p>
+            Contact us today for a free consultation and quote on any of our
+            services.
+          </p>
+          <a href="../index.html#quote" class="btn primary-btn"
+            >Get a Free Quote</a
+          >
+          <a href="../index.html#contact" class="btn secondary-btn"
+            >Contact Us</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>On Point Remediation</h3>
+            <p>
+              Professional mold remediation services for residential and
+              commercial properties. We're dedicated to providing safe,
+              effective solutions for all your mold problems.
+            </p>
+          </div>
+          <div class="footer-column">
+            <h3>Contact Us</h3>
+            <ul class="footer-contact">
+              <li>
+                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                <span>
+                  <address>
+                    123 Main Street<br />
+                    Anytown, ST 12345
+                  </address>
+                </span>
+              </li>
+              <li>
+                <i class="fas fa-phone" aria-hidden="true"></i>
+                <a
+                  href="tel:5551234567"
+                  aria-label="Call us at 5 5 5 1 2 3 4 5 6 7"
+                  >(555) 123-4567</a
+                >
+              </li>
+              <li>
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+                <a href="mailto:info@onpointremediation.com"
+                  >info@onpointremediation.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <nav aria-label="Footer navigation">
+              <ul class="footer-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li>
+                  <a href="services.html" aria-current="page">Services</a>
+                </li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2025 On Point Remediation. All Rights Reserved.</p>
         </div>
       </div>
+    </footer>
 
-      <div class="service-image">
-        <img src="../images/services/wood-repair.jpg" alt="Wood Repair">
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Service 7: Home Remodeling (Interior & Exterior) -->
-<section class="service-item">
-  <div class="container">
-    <div class="service-content">
-      <div class="service-text">
-        <h2>Home Remodeling (Interior & Exterior)</h2>
-        <p>From refreshing interiors to upgrading your home’s exterior, our remodeling services are tailored to bring your vision to life. We combine skilled craftsmanship with functional design to enhance comfort, style, and property value.</p>
-        <p>Whether you’re dreaming of a new kitchen, a bathroom overhaul, or exterior curb appeal, we’re here to help.</p>
-
-        <div class="service-features">
-          <h3>Our Remodeling Services Include:</h3>
-          <ul>
-            <li>Kitchen and bathroom renovations</li>
-            <li>Flooring and drywall installation</li>
-            <li>Painting and lighting upgrades</li>
-            <li>Exterior siding and paint</li>
-            <li>Window and door replacements</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="service-image">
-        <img src="../images/services/home-remodeling.jpg" alt="Home Remodeling">
-      </div>
-    </div>
-  </div>
-</section>
-
-
-         <section class="cta-section">
-            <div class="container">
-                <h2>Ready to Get Started?</h2>
-                    <p>Contact us today for a free consultation and quote on any of our services.</p>
-                    <a href="../index.html#quote" class="btn primary-btn">Get a Free Quote</a>
-                    <a href="../index.html#contact" class="btn secondary-btn">Contact Us</a>
-            </div>
-         </section>
-
-         <footer>
-            <div class="container">
-                <div class="footer-content">
-                    <div class="footer-logo">
-                        <h3>Company Name</h3>
-                        <p>Professional Mold Removal Services</p>
-                    </div>
-                    <div class="footer-links">
-                        <h4>Quick Links</h4>
-                        <ul>
-                            <li><a href="../index.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="reviews.html">Reviews</a></li>
-                            <li><a href="../index.html#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="copyright">
-                    <p>&copy; 2025 On Point Remediation. All Rights Reserved.</p>
-                </div>
-            </div>
-        </footer>
-    
-        <script src="../js/main.js"></script>
-    </body>
-    </html>
-    
-    
+    <script src="../js/script.js"></script>
+  </body>
+</html>

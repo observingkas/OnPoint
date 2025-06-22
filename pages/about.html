@@ -3,22 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn about our professional mold removal team, our history, mission, and certifications. Trusted mold remediation experts serving your community."
+    />
     <title>About Us - Professional Mold Removal Services</title>
     <link rel="stylesheet" href="../css/normalize.css" />
-    <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Robot:wght@300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+
     <style>
-      /* Page-specific styles */
       .about-hero {
         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
           url("../images/backgrounds/about-bg.jpg");
         background-size: cover;
         background-position: center;
         height: 50vh;
+        min-height: 400px;
         display: flex;
         align-items: center;
         text-align: center;
@@ -34,18 +38,18 @@
         top: 0;
         z-index: 1000;
         transition: var(--transition);
-    }
-    
-    header.scrolled {
+      }
+
+      header.scrolled {
         background: var(--darker-bg);
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    }
-    
-    header .container {
+      }
+
+      header .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
+      }
 
       .team-section {
         padding: 80px 0;
@@ -55,16 +59,11 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        gap: 30px;
       }
 
       .team-member {
-        flex: 0 0 calc(33.333% - 30px);
-        margin-bottom: 40px;
-        text-align: center;
-      }
-
-      .team-member {
-        flex: 0 0 calc(33.333% - 30px);
+        flex: 0 0 calc(33.333% - 20px);
         margin-bottom: 40px;
         text-align: center;
       }
@@ -75,11 +74,20 @@
         border-radius: 50%;
         object-fit: cover;
         margin-bottom: 20px;
+        border: 3px solid transparent;
+        transition: border-color 0.3s ease;
       }
+
+      .team-member img:focus {
+        outline: 3px solid #005fcc;
+        outline-offset: 2px;
+      }
+
       .team-member h3 {
         color: var(--cyan);
         margin-bottom: 15px;
         font-style: italic;
+        font-size: 1.25rem;
       }
 
       .history-section {
@@ -90,14 +98,11 @@
         padding: 60px 0;
       }
 
-      .history-section {
-        background-color: var(--darker-bg);
-      }
-
       .two-column {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        gap: 20px;
       }
 
       .column {
@@ -109,6 +114,7 @@
       .column img {
         width: 100%;
         border-radius: var(--border-radius);
+        height: auto;
       }
 
       .cert-logos {
@@ -116,16 +122,56 @@
         justify-content: center;
         flex-wrap: wrap;
         margin-top: 30px;
-    }
-    
-    .cert-logos img {
+        gap: 20px;
+      }
+
+      .cert-logos img {
         height: 80px;
-        margin: 0 20px 20px;
-    }
+        width: auto;
+        margin: 0;
+      }
+
+      .skip-link {
+        position: absolute;
+        top: -40px;
+        left: 6px;
+        background: #000;
+        color: #fff;
+        padding: 8px;
+        text-decoration: none;
+        z-index: 1001;
+        border-radius: 4px;
+      }
+
+      .skip-link:focus {
+        top: 6px;
+      }
+
+      a:focus,
+      button:focus,
+      input:focus,
+      textarea:focus,
+      select:focus {
+        outline: 3px solid #005fcc;
+        outline-offset: 2px;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
 
       @media (max-width: 768px) {
         .team-member {
-          flex: 0 0 calc(50% - 20px);
+          flex: 0 0 calc(50% - 10px);
+        }
+
+        .about-hero {
+          height: 40vh;
+          min-height: 300px;
         }
       }
 
@@ -133,20 +179,34 @@
         .team-member {
           flex: 0 0 100%;
         }
+
+        .cert-logos {
+          gap: 15px;
+        }
+
+        .cert-logos img {
+          height: 60px;
+        }
       }
     </style>
   </head>
 
   <body>
-    <header>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header role="banner">
       <div class="container">
         <div class="logo">
           <h1>On Point Remediation</h1>
         </div>
-        <nav>
+        <nav role="navigation" aria-label="Main navigation">
           <ul>
             <li><a href="../index.html">Home</a></li>
-            <li><a href="about.html" class="active">About Us</a></li>
+            <li>
+              <a href="about.html" class="active" aria-current="page"
+                >About Us</a
+              >
+            </li>
             <li><a href="services.html">Services</a></li>
             <li><a href="reviews.html">Reviews</a></li>
             <li><a href="../index.html#contact">Contact</a></li>
@@ -156,77 +216,112 @@
       </div>
     </header>
 
-    <section class="about-hero">
+    <main id="main-content" role="main">
+      <section class="about-hero" aria-labelledby="hero-heading">
         <div class="container">
-            <h2>About Our Company</h2>
-            <p>Learn more about our team, our mission, and our commitment to excellence.</p>
+          <h2 id="hero-heading">About Our Company</h2>
+          <p>
+            Learn more about our team, our mission, and our commitment to
+            excellence.
+          </p>
         </div>
-    </section>
+      </section>
 
-    <section class="mission-section">
+      <section class="mission-section" aria-labelledby="mission-heading">
         <div class="container">
-            <div class="two-column">
-                <div class="column">
-                    <h2>Our Mission</h2>
-                    <p>At On Point Remediation, our mission is to provide safe, effective, and thorough mold remediation services to homeowners and businesses in the KC Metro Area. What started as 2 men determined to make their mark in the remediation industry has grown into a trusted name in the industry, serving in the KC Metro Area for over a year now we have grown exponentially and plan on continuing to make a difference for our clients in a meaningful way. So while we've indeed expanded our services and team, we've never lost sight of our core values: quality, integrity, and customer satisfaction.</p>
-                </div>
+          <div class="two-column">
+            <div class="column">
+              <h2 id="mission-heading">Our Mission</h2>
+              <p>
+                At On Point Remediation, our mission is to provide safe,
+                effective, and thorough mold remediation services to homeowners
+                and businesses in the KC Metro Area. What started as 2 men
+                determined to make their mark in the remediation industry has
+                grown into a trusted name in the industry, serving in the KC
+                Metro Area for over a year now we have grown exponentially and
+                plan on continuing to make a difference for our clients in a
+                meaningful way. So while we've indeed expanded our services and
+                team, we've never lost sight of our core values: quality,
+                integrity, and customer satisfaction.
+              </p>
             </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section class="team-section">
+      <section class="team-section" aria-labelledby="team-heading">
         <div class="container">
-            <h2>Meet Our Team</h2>
-            <p class="section-into">Our team of certified professionals is dedicated to providing the highest quality mold remediation services</p>
+          <h2 id="team-heading">Meet Our Team</h2>
+          <p class="section-intro">
+            Our team of certified professionals is dedicated to providing the
+            highest quality mold remediation services
+          </p>
+          <!-- Fixed: Typo corrected -->
 
-        
-            <div class="team-grid">
-                <div class="team-member">
-                    <img src="../images/team/team1.jpg" alt="Team Member">
-                    <h3>Kenneth Hernandez</h3>
-                    <p class="position">Superintendent</p>
-                    <p>Ken has over 7 years of experience in mold remediation and is certified by the state of Kansas.</p>
-                </div>
-
-                <div class="team-member">
-                    <img src="../images/team/team2.jpg" alt="Team Member">
-                    <h3>Dillon Hixon</h3>
-                    <p class="position">Project Manager</p>
-                    <p>Dillon oversees all projects and ensures they are completed to our high standards.</p>
-                </div>
-                
-                <div class="team-member">
-                    <img src="../images/team/team3.jpg" alt="Team Member">
-                    <h3>Bandit Hernandez</h3>
-                    <p class="position">Mascot</p>
-                    <p>Bandit specializes in boosting team morale and being an all around good boy.</p>
-                    </div>
-                </div>
+          <div class="team-grid" role="list">
+            <div class="team-member" role="listitem">
+              <img
+                src="../images/team/team1.jpg"
+                alt="Professional headshot of Kenneth"
+              />
+              <h3>Kenneth Hernandez</h3>
+              <p class="position" aria-label="Job title">Superintendent</p>
+              <p>
+                Ken has over 7 years of experience in mold remediation and is
+                certified by the state of Kansas.
+              </p>
             </div>
-    </section>
+            <div class="team-member" role="listitem">
+              <img
+                src="../images/team/team2.jpg"
+                alt="Professional headshot of Dillon"
+              />
+              <h3>Dillon Hixon</h3>
+              <p class="position" aria-label="Job title">Project Manager</p>
+              <p>
+                Dillon oversees all projects and ensures they are completed to
+                our high standards.
+              </p>
+            </div>
+            <div class="team-member" role="listitem">
+              <img
+                src="../images/team/team3.jpg"
+                alt="Friendly company mascot dog"
+              />
+              <h3>Bandit Hernandez</h3>
+              <p class="position" aria-label="Job title">Mascot</p>
+              <p>
+                Bandit specializes in boosting team morale and being an all
+                around good boy.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h3>On Point Remediation</h3>
-                    <p>Professional Mold Removal Services</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="reviews.html">Reviews</a></li>
-                        <li><a href="../index.html#contact">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="copyright">
-                    <p>&copy; 2025 On Point Remediation. All Rights Reserved.</p>
-                </div>
+    <footer role="contentinfo">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h3>On Point Remediation</h3>
+            <p>Professional Mold Removal Services</p>
+          </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="reviews.html">Reviews</a></li>
+              <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2025 On Point Remediation. All Rights Reserved.</p>
+        </div>
+      </div>
     </footer>
 
     <script src="../js/main.js"></script>
